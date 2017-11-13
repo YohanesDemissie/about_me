@@ -1,6 +1,6 @@
 'use strict'
 var score=0;
-var name = prompt('Welcome to the Yohanes trivia ' + name + ' Please enter your user name.');
+var name = prompt('Welcome to the Yohanes trivia! Please enter your user name.');
 
 function namFun(){
   var nameQuestion = prompt ('Welcome to the trivia ' + name + ', and good luck! Question #1: Is "Yohanes" a translated version of "Juan"?').toLowerCase();
