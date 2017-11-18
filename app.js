@@ -1,11 +1,12 @@
-'use strict'
+'use strict';
+
 var score=0;
-var name = prompt('Welcome to the Yohanes trivia! Please enter your user name.');
+var name = prompt('Welcome to the Yohanes trivia ' + name + ' Please enter your user name.');
 
 function namFun(){
   var nameQuestion = prompt ('Welcome to the trivia ' + name + ', and good luck! Question #1: Is "Yohanes" a translated version of "Juan"?').toLowerCase();
   var nameAnswer = 'yes';
-  console.log ('First Question', nameQuestion);
+  console.log ('First Question', name);
 
   if (nameQuestion === nameAnswer) {
     alert ('How the hell did you know?! Yohanes is the Amharic interpreted name for "John" which is the english interpreted name for the spanish translation, "Juan". You are one step closer to a million dollars! Are you ready for your next question?');
