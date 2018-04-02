@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+    a:hover { //on hover works. do NOT DELETE
+        border-bottom: 1px solid #111;
+        border-color: white;
+        font-weight: bolder;
+    }
+
+    p:hover:before { //this is technically the after
+      opacity: 1; 
+      transform: translate(0,0);
+    }
+
+    .p-content:before {
+      // display: none; this completely hides all content before/after
+      content: attr(data-hover);
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+    p:after{
+  padding: 100%;
+  margin: 100%;
+  text-decoration: none;
+  color: #111;
+}
+      /*button div (button text before hover)*/
+      p:hover div{
+        opacity: 0;
+        transform: translate(100%,0);
+        display: none;
+      }
+      p div{ //this is just in charge of transitino style and the BEFORE content
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }
+
