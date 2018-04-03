@@ -1,9 +1,41 @@
-.p-hide{ 
-display: none;
+a:hover { //linked in hover
+  border-bottom: 1px solid #111;
+  border-color: white;
+  font-weight: bolder;
 }
-.container:hover .p-hide{
-display : block;
+
+//what type of developer am I
+.p-hide{ //developer content hide
+  display: none;
 }
-.container:hover .p-show{
-display : none;
+
+.container-dev:hover .p-hide{ //on hover show developer content
+  display : block;
+  // background-color: rgba(255, 0, 0, 0.5);
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.container-dev:hover .p-show{ //changes dev display
+  display: block;
+}
+// end of developer container
+//<--------------------------------------------->
+//education developer
+
+.cf-experience{ //developer contencf-experience
+  display: none;
+}
+
+.container-education:hover .cf-experience{ //on hover show developer content
+  display : block;
+  // background-color: rgba(255, 0, 0, 0.5);
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.container-education:hover .education-show{ //changes dev display
+  display: block;
 }
